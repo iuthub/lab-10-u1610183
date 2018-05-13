@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task 7</title>
+</head>
+<body>
+	<h1>Pizza Order Form</h1> 
+ 
+	<fieldset>   
+		# of Small Pizzas 
+		<input type="text" id="small" value="0"/><br />    
+		# of Medium Pizzas 
+		<input type="text" id="medium" value="0" /><br />    
+		# of Large Pizzas 
+		<input type="text" id="large" value="0" /><br /> 
+ 
+   	Tip:    
+   	<label>
+   		<input type="radio" id="ten" name="tip" value="10"/> 
+   		10%
+   	</label>    
+   	<label>
+   		<input type="radio" id="fifteen" name="tip" checked="checked" value="15"/> 
+   		15%   
+   	</label>    
+   	<label>
+   		<input type="radio" id="twenty" name="tip" value="20"/> 
+   		20%
+   	</label> 
+   	<br /> 
+ 
+  	<button id="submit" onclick="calculate();">Calculate Order</button> 
+  </fieldset> 
+ 
+	<p> 
+		Cost of order: 
+		<span id="price"></span> 
+	<p>
+
+	<script type="text/javascript" src="calculate.js"></script>
+</body>
+</html>
